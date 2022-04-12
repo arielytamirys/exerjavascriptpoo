@@ -24,24 +24,48 @@
 
         class Carro {
              
-            constructor(cor){
-        this.cor=cor
-        console.log('Olá, sou um novo carro:'+ this.cor)
+            constructor(marca,modelo,cor){
+        this.marca
+        this.modelo
+        this.cor=cor /*como setar e mudar valor de atributo*/
+        this.ligado=false
+        this.km=0
 
+        
+            }
 
-
+            info(){ /*metodo info*/
+             console.log ("Marca:"+ this.marca)
+             console.log ("Modelo:"+ this.modelo)
+             console.log ("Cor:"+ this.cor)
+             console.log ("Ligado:"+ this.ligado ? "Sim" : "Não")/*condicinal.. (?) se ligado sim .. (:) se não ligado não*/
+             console.log ("KM:"+ this.km)   
+            }
+            ligar(){
+                this.ligado=true
+            }
+            desligar(){
+                this.ligado=false
             }
 
         }
 
-        let c1=new Carro('vermelho')
-        
-        let c2=new Carro('amarelo')
-        
-        let c3=new Carro('verde')
-        
-        let c4=new Carro('preto') 
-
+        let c1=new Carro("Honda","HRV","vermelho")
+        let c2=new Carro("VW", "Golf","amarelo")
+        let c3=new Carro("GM","Camaro","verde")
+        let c4=new Carro("Ford","ka","preto") 
+       
+        /*mudando a cor*/
+        c1.cor="Azul"
+        c2.cor="Rosa"
+        c3.cor="Lilas"
+        c4.cor="Prata"  
+      
+        /*invocando a função*/
+        c1.info()
+        c2.info()
+        c3.info()
+        c4.info()
     </script>
 </body>
 </html>
