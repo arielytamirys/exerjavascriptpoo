@@ -1,0 +1,18 @@
+.aula{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+
+}
+
+.link{
+    text-decoration: none;
+
+}
+
+.exer{
+   color: rgb(49, 49, 235);
+}
